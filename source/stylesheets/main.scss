@@ -19,6 +19,10 @@
 
 		width: 357px;
 		bottom: 12px;
+
+		.credits {
+			font-size: 12px;
+		}
 	}
 
 	&:hover{
@@ -55,7 +59,7 @@ body {
 // Logo and refresh positions
 .content.left {
 	.logo, .refresh { left: 70px; }
-	.about {left: 29px;}
+	.about {left: 29px; text-align: left}
 }
 
 .content.right {
