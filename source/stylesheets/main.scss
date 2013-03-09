@@ -1,0 +1,76 @@
+// Invariant positions
+.logo {
+	position: absolute;
+	bottom: 55px;
+	z-index: 2;
+
+	.about{
+		position: absolute;
+		z-index: 2;
+		display: none;
+		opacity: 0;
+		width: 300px;
+		pointer-events: none;
+		font-size: 17px;
+
+		transition: opacity 1s;
+		-webkit-transition: opacity 1s;
+		-moz-transition: opacity 1s;
+
+		width: 357px;
+		bottom: 12px;
+	}
+
+	&:hover{
+		.about {
+			opacity: 1;
+			display: block;
+		}
+	}
+}
+.refresh {
+	position: absolute;
+	top: 80px;
+	width: 7%;
+	cursor: pointer;
+	z-index: 2;
+}
+.bg {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	opacity: 0;
+}
+.fb-like {
+	position: absolute !important;
+	left: 10px;
+	top: 10px;
+	z-index: 2;
+}
+body {
+	overflow: hidden;
+}
+
+// Logo and refresh positions
+.content.left {
+	.logo, .refresh { left: 70px; }
+	.about {left: 29px;}
+}
+
+.content.right {
+	.logo, .refresh { right: 70px; }
+	.about {right: 29px; text-align: right}	
+}
+
+// Show / hide correct colors
+.content.white {
+	.black { display: none }
+	.white { display: block }
+	.about { color: white; }
+}
+.content.black {
+	.black { display: block }
+	.white { display: none }
+	.about { color: black; }
+}
